@@ -1,0 +1,87 @@
+.titulo-principal-contato {
+    text-align: center;
+    background-color:#E81123;
+    color: white;
+    padding: 2rem;
+    border-bottom: .5rem solid #000;
+}
+
+legend,
+label[for="msg"]{
+    font-weight: bold;
+    margin-top: 1em
+    
+}
+label[for]{
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    font-family: inherit; /*força o navegador a usar a mesma fonte da página*/
+    /*mesmo tamanho da pagina*/
+    font-size: 100%;
+    padding: .25em .5em;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc
+    
+}
+fieldset > fieldset{
+    display: inline;
+}
+label[for="outro"]{
+    display: inline;
+}
+/*deixa o texto que tiver o foco do teclado com o fundo de outra cor*/
+input:focus,
+textarea:focus{
+    background-color: #ffd;
+}
+input:invalid{
+    box-shadow: 0 0 3;
+}
+
+button{
+    border: 0; /* retirando a borda padrão do navegador*/
+    padding: .5em 1em;
+    font-family: "Open Sans condensed", sans-serif;
+    background-color: #E81123;
+    color: white;
+    font-size: 1.2em;
+    /*fazendo o botao aparecer na direita*/
+    margin-left: auto;
+    margin-top: 1em;
+    display: block;
+}
+
+button:hover,
+button:focus{
+    background-color: yellow;
+}
+input[value="outros"] ~ input{
+    display: none;
+}
+input[value="outros"]:checked ~ input {
+    display: inline;
+}
+
+
+
+.navegacao-site a:hover,
+.navegacao-site a:focus {
+    color: #E81123;
+}
+.rodape-pagina-contato{
+    color:white;
+    padding: 0.3em;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color:#E81123;
+}
