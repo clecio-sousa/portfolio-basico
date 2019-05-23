@@ -1,0 +1,53 @@
+.titulo-principal {
+    text-align: center;
+    background-color:#00B7C3;
+    color: white;
+    padding: 2rem;
+    border-bottom: .5rem solid #000;
+}
+.leia-mais {
+    padding: .5em;
+    margin: 1em;
+    display: block;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #E6E7E8;
+}
+
+.post-blog + .post-blog {
+    padding-top: 1em;
+    margin-top: 1.5em;
+    background-image: linear-gradient(to right, rgba(200, 200, 200, 0), rgba(200, 200, 200, 1), rgba(200, 200, 200, 0));
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.rodape-pagina-blog{
+    color:white;
+    padding: 0.3em;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color: #00B7C3;
+}
+
+a {
+    color: #00B7C3;
+}
+
+.navegacao-site-blog a {
+    color: inherit;
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navegacao-site a:hover,
+.navegacao-site a:focus {
+    color: #00B7C3;
+}
